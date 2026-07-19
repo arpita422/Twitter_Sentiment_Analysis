@@ -113,9 +113,9 @@ The application displays:
 
 ## 👩‍💻 Author
 
-**Arpita Sharma**
+Arpita Sharma
 
-B.Tech CSE Student
+B.Tech CS Student
 
 Narula Institute of Technology
 
