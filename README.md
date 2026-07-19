@@ -1,29 +1,28 @@
-# Twitter Sentiment Analysis
+# Twitter Sentiment Analyzer
 
-A **Twitter Sentiment Analysis** web application built using **Python**, **Machine Learning**, **Natural Language Processing (NLP)**, and **Streamlit**. The application predicts whether a given tweet or text expresses **Positive** or **Negative** sentiment using a trained machine learning model.
+A simple **Twitter Sentiment Analyzer** built using **Python**, **Machine Learning**, and **Natural Language Processing (NLP)**. This project predicts whether a given tweet or text has a **Positive** or **Negative** sentiment using a pre-trained machine learning model.
+
+The model was developed and trained in **Jupyter Notebook**, while the application is deployed using **Streamlit**.
 
 ---
 
 ## 📌 Features
 
-- Analyze sentiment of custom text
-- Fetch tweets from a Twitter user *(requires a working tweet source)*
-- Predict Positive or Negative sentiment
-- Interactive Streamlit web interface
-- Text preprocessing using NLTK
-- TF-IDF Vectorization
-- Machine Learning based sentiment classification
+- Analyze the sentiment of text or tweets.
+- Predicts **Positive** or **Negative** sentiment.
+- Interactive web interface built with Streamlit.
+- Uses a trained Machine Learning model.
+- Fast and easy to use.
 
 ---
 
 ## 🛠️ Technologies Used
 
 - Python
+- Jupyter Notebook
 - Streamlit
 - Scikit-learn
 - NLTK
-- Pandas
-- NumPy
 - Pickle
 
 ---
@@ -34,17 +33,14 @@ A **Twitter Sentiment Analysis** web application built using **Python**, **Machi
 Twitter-Sentiment-Analyzer/
 │
 ├── app.py
-├── train_model.py
 ├── model.pkl
 ├── vectorizer.pkl
-├── requirements.txt
-├── README.md
-└── dataset.csv
+└── README.md
 ```
 
 ---
 
-## 🚀 Installation
+## 🚀 How to Run
 
 ### 1. Clone the repository
 
@@ -52,102 +48,56 @@ Twitter-Sentiment-Analyzer/
 git clone https://github.com/your-username/Twitter-Sentiment-Analyzer.git
 ```
 
-### 2. Open the project
+### 2. Open the project folder
 
 ```bash
 cd Twitter-Sentiment-Analyzer
 ```
 
-### 3. Create a virtual environment
-
-Windows
+### 3. Install the required libraries
 
 ```bash
-python -m venv venv
+pip install streamlit scikit-learn nltk pandas numpy
 ```
 
-Activate
-
-```bash
-venv\Scripts\activate
-```
-
-### 4. Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
-## ▶️ Run the Application
+### 4. Run the application
 
 ```bash
 streamlit run app.py
 ```
 
-The application will open automatically in your browser.
+The application will open in your default web browser.
 
 ---
 
-## 📊 Machine Learning Workflow
+## 📊 Working
 
-1. Load dataset
-2. Clean and preprocess text
-3. Remove stopwords
-4. Convert text into TF-IDF vectors
-5. Train the machine learning model
-6. Save the trained model
-7. Predict sentiment on new text
+1. Enter text or a tweet.
+2. The text is preprocessed using NLP techniques.
+3. The trained TF-IDF vectorizer converts the text into numerical features.
+4. The Machine Learning model predicts the sentiment.
+5. The result is displayed as **Positive** or **Negative**.
 
 ---
 
-## 📷 Application Features
+## 🤖 Machine Learning Model
 
-- Text sentiment prediction
-- Positive/Negative classification
-- Interactive web interface
-- Real-time prediction
-- Fast processing
-
----
-
-## 📈 Model Used
-
-The project uses:
-
-- TF-IDF Vectorizer
-- Scikit-learn Classifier
-- NLTK for text preprocessing
+- Text Preprocessing
+- Stopword Removal
+- TF-IDF Vectorization
+- Trained Sentiment Classification Model
+- Model stored as `model.pkl`
+- Vectorizer stored as `vectorizer.pkl`
 
 ---
 
-## 📦 Requirements
+## 📷 Output
 
-```
-streamlit
-scikit-learn
-pandas
-numpy
-nltk
-pickle-mixin
-```
+The application displays:
 
-Install them using:
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
-## 📸 Screenshots
-
-Add screenshots of:
-
-- Home Page
-- Text Input
-- Prediction Result
+- Input Text
+- Predicted Sentiment
+- User-friendly Streamlit Interface
 
 ---
 
@@ -155,10 +105,9 @@ Add screenshots of:
 
 - Neutral sentiment prediction
 - Live Twitter/X API integration
-- Sentiment visualization with charts
-- Emoji sentiment detection
+- Sentiment visualization using charts
 - Multi-language support
-- Download prediction reports
+- Improved tweet fetching
 
 ---
 
@@ -172,6 +121,6 @@ Narula Institute of Technology
 
 ---
 
-## ⭐ If you like this project
+## ⭐ Support
 
-Please give this repository a ⭐ on GitHub
+If you found this project useful, please consider giving this repository a **⭐ Star** on GitHub.
